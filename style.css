@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('../https://fonts.google.com/specimen/Red+Hat+Display');
+    font-weight: 400,500,700,900 ;
+
+}
+
+@media (min-width: 375px) {
+    .order-summary-card{
+        width: 300px;}
+}
+:root { 
+    --White: hsl(0, 0%, 100%);
+    --Grayish-blue: hsl(223, 47%, 23%);
+    --dark-blue:hsl(218, 44%, 22%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --light: hsl(218, 10%, 62%);
+}
+
+body{
+    
+    background-color: var(--Desaturated-blue);
+    margin: 1.25rem;
+    display:flex;
+    flex-direction: column;
+    align-self:stretch;
+    align-items: center;
+    text-align: center;
+    font-family: system-ui;
+    align-content: space-between;
+    justify-content: center;
+}
+.order-summary-card{
+    height:fit-content;
+    margin-bottom: 1.25rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+    background-color: var(--White);
+    border-bottom: 100px;
+    align-self:center;
+    
+}
+.card-header{
+    max-width: 100%;
+    margin-bottom: 1.25rem;
+    border-top-left-radius:  0.625rem;
+    border-top-right-radius:  0.625rem;
+}
+.order-summary-card img {
+    max-width: 100%;
+    margin-bottom: 1.25rem;
+    border-top-left-radius:  0.625rem;
+    border-top-right-radius:  0.625rem;
+}
+
+.title {
+    color: var(--light);
+    font-size: 15px;
+    margin-bottom: 1.25rem;
+    font-family:system-ui;
+    font-weight:normal;
+    padding: 25px;
+}
+.txt {
+    display: flex;
+    align-items: center;
+}
+.product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--Very-pale-blue);
+    padding-top:.7rem ;
+    padding-bottom:.7rem ;
+    border-radius: .5rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    margin-top: .7rem;
+    font-size: small;
+
+
+}
+.product-name{
+    display: flex;
+    font-weight: bold;
+}
+.product-price{
+    display: flex;
+    color: var(--light);
+}
+#pro {
+    flex-direction: column;
+    display: flex;
+    font-family:system-ui ;
+    justify-content: center;
+
+    
+}
+input {
+    width: 260px;
+    height: 40px;
+}
+#proceed {
+    justify-content: center;
+    display: flex;
+    background-color: blue;
+    font-size: large;
+    border-radius: .5rem;
+    border: blue;
+    color:var(--White);
+    font-family: system-ui;
+}
+
+#cancel {
+    font-family:system-ui ;
+    justify-content: center;
+    display: flex;
+    border: none;
+    background: none; 
+    font-size: medium;
+
+}
+.buttons {
+
+    display:inline-block;
+    border-radius: .3rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    margin-top: .7rem;
+    padding-top:.7rem ;
+    padding-bottom:.7rem ;
+}
+.attribution {
+    display: flex;
+    font-size:x-small;
+    justify-content: center;
+    margin-bottom: 15px;
+}
